@@ -1,0 +1,14 @@
+{
+  "Sr": 1,
+  "uid": "test",
+  "Business_Name": "WhatsBot - WhatsApp Broadcast Messaging",
+  "Name": "Your Name Here",
+  "Mobile": 919999999999,
+  "Email": "contact@example.com",
+  "Personal_Price": 25,
+  "Enterprise_Price": 100,
+  "Account_Status": true,
+  "Personal_App_ID": "price_1IDWdjJfPaVmMPuKug3fEqnt",
+  "Enterprise_App_ID": "",
+  "repository": "genieiotiot/sample-reseller"
+}
