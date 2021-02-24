@@ -3,8 +3,6 @@
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="UTF-8" http-equiv="encoding">
-
-
 	
 	</script>
 
@@ -295,6 +293,16 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
+
+			<!-- Pre Populate form Fields -->
+			<script>
+				var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+				for(var i = 0; i < hashParams.length; i++){
+					var p = hashParams[i].split('=');
+					document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+				}
+			</script>
+			
 									<!-- Stripe Section -->
 									<script>
 										// Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
